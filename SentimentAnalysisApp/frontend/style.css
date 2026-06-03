@@ -1,0 +1,83 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* Main container */
+h1 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 30px;
+}
+
+/* Textarea styling */
+textarea {
+    width: 80%;
+    max-width: 600px;
+    height: 150px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Textarea focus effect */
+textarea:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Result text styling */
+#result {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    textarea {
+        width: 90%;
+    }
+
+    button {
+        width: 80%;
+    }
+}
